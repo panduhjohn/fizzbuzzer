@@ -30,22 +30,31 @@ function fizzBuzz(event) {
   // object and find the value the user has added there.
   
 
-/*
-   TODO: Print out the Fizzbuzz pattern up to that input.
-   Use the pre-defined `printResult` function below to print out each line,
-   giving it the value you want to print.
-   
-   Essentially, you can use `printResult` the same way you would `console.log`,
-   only it will write to the DOM instead of to the console.
-   
-   You can write your `while` loop however you want, but you MUST write it
-   yourself for your own better comprehension. No copy-pasting, please!
-*/
+  /*
+    TODO: Print out the Fizzbuzz pattern up to that input.
+    Use the pre-defined `printValue` function below to print out each line,
+    giving it the value you want to print.
+    
+    Essentially, you can use `printValue` the same way you would `console.log`,
+    only it will write to the DOM instead of to the console.
+    
+    You can write your `while` loop however you want, but you MUST write it
+    yourself for your own better comprehension. No copy-pasting, please!
+  */
 
 
-  // Stretch goal TODO:
-  // Using the variable we saved above for the input box, clear its value.
-  // You might have to do a small bit of research for this, though you should be able to figure it out based on the fact that we can assign values to properties, just as we can to variables.
+  /*
+    Stretch goal TODO:
+    Using the variable we saved above for the input box, clear its value.
+    
+    You might have to do a small bit of research for this, though you should be
+    able to figure it out based on the fact that we can assign values to properties,
+    just as we can to variables.
+
+    This is a very useful feature, as it's an annoying and unexpected user
+    experience to ask them to delete anything they've inputted previously before
+    inputting something else.
+  */
 
 }
 
