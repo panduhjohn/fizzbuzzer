@@ -13,9 +13,13 @@ function fizzBuzz(event) {
     don't need to put anything in the parentheses to tell it what to clear, just
     call it--it knows what to do!
   */
-  function clearList() 
+  clearList() 
   
-  // TODO: Find the input box the user is typing in and put it in a variable.
+  // Find the input box the user is typing in and put it in a variable.
+
+  const two = document.querySelector('input')
+  console.log(input);
+  
   
   // TODO: Use the variable you saved in the above step to dive deeper into the
   // object and find the value the user has added there. Make sure it's a
