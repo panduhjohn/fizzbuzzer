@@ -17,16 +17,19 @@ function fizzBuzz(event) {
   
   // Find the input box the user is typing in and put it in a variable.
 
-  const two = document.querySelector('input')
-  console.log(input);
+  const inputBox = document.querySelector('input');
+  console.dir(inputBox);
   
   
   // TODO: Use the variable you saved in the above step to dive deeper into the
   // object and find the value the user has added there. Make sure it's a
   // number, not a string. Save it to a variable.
 
+  const userInput = inputBox.value;
+  console.log(userInput);
+
   /*
-    TODO: Print out the Fizzbuzz pattern up to that input.
+    Print out the Fizzbuzz pattern up to that input.
     Use the pre-defined `printValue` function below to print out each line,
     giving it the value you want to print.
     
@@ -39,6 +42,36 @@ function fizzBuzz(event) {
     As a stretch goal (wait until you've finished the basic FizzBuzz solution!),
     call `printValueStrong` instead of `printValue` for even-numbered items.
   */
+
+ 
+
+  let counter = 1
+  
+  while (counter <= userInput) {
+    
+    const divisibleBy3 = counter % 3 === 0;
+    const divisibleBy5 = counter % 5 === 0;
+    
+    // if divisible by 15
+    if (divisibleBy5 && divisibleBy3) {
+      printValue('FizzBuzz');
+    }
+    // if divisible by 3 and not by 5
+    if (divisibleBy3 && !divisibleBy5) {
+      printValue('Fizz');
+    }
+    // if not divisibleBy 3 and divisibleBy 5
+    if (!divisibleBy3 && divisibleBy5) {
+      printValue('Buzz');
+    }
+    // if not divisible by 5 nor 3
+    if (!divisibleBy5 && !divisibleBy3) {
+      printValue(counter);
+    }
+
+    counter = counter + 1;
+
+  }
 
 
   /*
@@ -53,7 +86,9 @@ function fizzBuzz(event) {
     experience to ask them to delete anything they've inputted previously before
     inputting something else.
   */
-
+  // function clearField(input) {
+  //   input.value = "";
+  // };
 }
 
 function printValue(value) {
