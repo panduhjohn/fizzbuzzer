@@ -21,13 +21,8 @@ function fizzBuzz(event) {
   
   // TODO: Find the input box the user is typing in and put it in a variable.
 
-
-  // TODO: Grab the text that was in that input when the submit button was pushed.
-  // Save it to a variable.
-
-
   // TODO: Use the variable you saved in the above step to dive deeper into the
-  // object and find the value the user has added there.
+  // object and find the value the user has added there. Save it to a variable.
   
 
   /*
