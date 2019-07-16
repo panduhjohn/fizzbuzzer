@@ -72,7 +72,9 @@ function printValue(value) {
       color: blue;
       margin-top: 5px;
     }
-    .
+    
+    If you want to set the values of these properties to something else, feel
+    free!
   */
 
   // Find the unordered list we've made into a results console.
