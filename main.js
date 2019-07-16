@@ -3,27 +3,23 @@ const submitButton = document.querySelector('.submit');
 //When it's clicked, launch `fizzBuzz`.
 submitButton.onclick = fizzBuzz;
 
-// Find the clear button on our page.
-const clearButton = document.querySelector('.clear')
-// When it's clicked, launch `clearResults`.
-clearButton.onclick = clearResults;
 
 function fizzBuzz(event) {
   // Make sure the page isn't reloaded when the user submits the form.
   event.preventDefault();
 
-/*
-  TODO: Call the function `clearResult`, which we have defined for you. You
-  don't need to put anything in the parentheses to tell it what to clear, just
-  call it--it knows what to do!
-*/
+  /*
+    TODO: Call the function `clearList`, which we have defined for you. You
+    don't need to put anything in the parentheses to tell it what to clear, just
+    call it--it knows what to do!
+  */
 
   
   // TODO: Find the input box the user is typing in and put it in a variable.
-
-  // TODO: Use the variable you saved in the above step to dive deeper into the
-  // object and find the value the user has added there. Save it to a variable.
   
+  // TODO: Use the variable you saved in the above step to dive deeper into the
+  // object and find the value the user has added there. Make sure it's a
+  // number, not a string. Save it to a variable.
 
   /*
     TODO: Print out the Fizzbuzz pattern up to that input.
@@ -35,6 +31,9 @@ function fizzBuzz(event) {
     
     You can write your `while` loop however you want, but you MUST write it
     yourself for your own better comprehension. No copy-pasting, please!
+
+    As a stretch goal (wait until you've finished the basic FizzBuzz solution!),
+    call `printValueStrong` instead of `printValue` for even-numbered items.
   */
 
 
@@ -53,11 +52,28 @@ function fizzBuzz(event) {
 
 }
 
-function printResult(value) {
+function printValue(value) {
   // Create a list item.
   const listItem = document.createElement('li');
   // Put its value as its contents.
   listItem.innerText = value;
+
+  /*
+    Stretch goal TODO:
+    Before we append it to the list, let's style this list item.
+    Give it the following (easy but not particularly good) CSS, using properties
+    on [element].style. See `printValueStrong` below for a couple examples.
+
+    Although I'm using CSS to demonstrate what we want, note that we want you to
+    use JavaScript for this. Also note that there's no kebab case in JavaScript!
+
+    li {
+      font-size: 2em;
+      color: blue;
+      margin-top: 5px;
+    }
+    .
+  */
 
   // Find the unordered list we've made into a results console.
   const list = document.querySelector('.list')
@@ -65,10 +81,24 @@ function printResult(value) {
   list.appendChild(listItem);
 }
 
-function clearResults(event) {
-  // Make sure the page isn't reloaded when the user submits the form.
-  event.preventDefault();
-  
+function printValueStrong(value) {
+  // Create a list item.
+  const listItem = document.createElement('li');
+  // Put the uppercased value as its contents and make it bold.
+  listItem.innerText = value.toString().toUpperCase();
+  listItem.style.fontWeight = 'bold';
+
+  // Stretch goal TODO: copy and paste the styling code from `printValue` here.
+  // Otherwise we'll only get the styling on half the items!
+
+
+  // Find the unordered list we've made into a results console.
+  const list = document.querySelector('.list')
+  // Append our list item to it.
+  list.appendChild(listItem);
+}
+
+function clearList() {
   // Find the unordered list we've made into a results console.
   const list = document.querySelector('.list')
 
