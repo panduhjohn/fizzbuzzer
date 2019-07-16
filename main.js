@@ -9,7 +9,7 @@ function fizzBuzz(event) {
   event.preventDefault();
 
   /*
-    TODO: Call the function `clearList`, which we have defined for you. You
+    Call the function `clearList`, which we have defined for you. You
     don't need to put anything in the parentheses to tell it what to clear, just
     call it--it knows what to do!
   */
