@@ -13,7 +13,7 @@ function fizzBuzz(event) {
     don't need to put anything in the parentheses to tell it what to clear, just
     call it--it knows what to do!
   */
-  clearList() 
+  clearList(); 
   
   // Find the input box the user is typing in and put it in a variable.
 
@@ -21,7 +21,7 @@ function fizzBuzz(event) {
   console.dir(inputBox);
   
   
-  // TODO: Use the variable you saved in the above step to dive deeper into the
+  // Use the variable you saved in the above step to dive deeper into the
   // object and find the value the user has added there. Make sure it's a
   // number, not a string. Save it to a variable.
 
@@ -75,7 +75,7 @@ function fizzBuzz(event) {
 
 
   /*
-    Stretch goal TODO:
+    
     Using the variable we saved above for the input box, clear its value.
     
     You might have to do a small bit of research for this, though you should be
@@ -86,9 +86,7 @@ function fizzBuzz(event) {
     experience to ask them to delete anything they've inputted previously before
     inputting something else.
   */
-  // function clearField(input) {
-  //   input.value = "";
-  // };
+    input.value = "";
 }
 
 function printValue(value) {
