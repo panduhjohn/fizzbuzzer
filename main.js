@@ -68,14 +68,11 @@ function fizzBuzz(event) {
     if (!divisibleBy5 && !divisibleBy3) {
       printValue(counter);
     }
-
+    
     counter = counter + 1;
 
   }
-
-
   /*
-    
     Using the variable we saved above for the input box, clear its value.
     
     You might have to do a small bit of research for this, though you should be
